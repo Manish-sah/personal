@@ -18,14 +18,17 @@
             <div class="logo">
                 <img src="gna.png" width="30px" alt="logo">
             </div>
-            <nav>
+            <nav id="main_menu">
                 <a href="index.html">Home</a>
                 <a href="#skill">Skills</a>
                 <a href="#about">About Me</a>
-                <a href="#">Achievement</a>
+                <a href="https://github.com/manish-sah">GitHub</a>
                 <a href="#contact">Contact</a>
                 
             </nav>
+            <span class="menu_icon" id="menu_icon">
+                ☰
+            </span>
         </div>
 
         <div class="sub_container">
@@ -108,4 +111,17 @@
 
 
 
+<script>
+let main_Menu_     =document.getElementById("main_menu");
+    let menu = document.getElementById("menu_icon").addEventListener('click',()=>{
+        if(main_Menu_.style.display === "flex")
+        {
+            main_Menu_.style.display = "none";
+        }
+        else
+        {
+            main_Menu_.style.display = "flex";
+        }
+    })
+</script>
 
